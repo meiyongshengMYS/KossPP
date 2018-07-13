@@ -28,6 +28,8 @@
         NSLog(@"请在iPhone的“设置-隐私-通讯录”选项中，允许PPAddressBook访问您的通讯录");
     }];
     
+    UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, 375, 667) style:UITableViewStylePlain];
+    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
     
 }
 
