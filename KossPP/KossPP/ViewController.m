@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
-
+#import "PPPersonModel.h"
 @interface ViewController ()
+
+@property (nonatomic, strong)NSMutableArray *address_Arr;
 
 @end
 
@@ -16,14 +18,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [PPGetAddressBook getOriginalAddressBook:^(NSArray<PPPersonModel *> *addressBookArray) {
+        _address_Arr = [NSMutableArray arrayWithArray:addressBookArray];
+        for (PPPersonModel *model in addressBookArray) {
+            NSLog(@"%@-%@",model.name,model.mobileArray);
+        }
+    } authorizationFailure:^{
+        NSLog(@"请在iPhone的“设置-隐私-通讯录”选项中，允许PPAddressBook访问您的通讯录");
+    }];
+    
+    
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 
 @end

@@ -1,0 +1,34 @@
+//
+//  PrefixHeader.pch
+//  KossPP
+//
+//  Created by 梅 on 2018/7/13.
+//  Copyright © 2018年 mei. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#define __string(__k__) @property (nonatomic,copy) NSString *__k__
+#define __date(__k__) @property (nonatomic,copy) NSDate *__k__
+#define __arraymutable(__k__) @property (nonatomic,strong)NSMutableArray*__k__
+#define __array(__k__) @property (nonatomic,strong)NSArray*__k__
+#define __dicmutable(__k__) @property (nonatomic,strong)NSMutableDictionary*__k__
+#define __number(__k__) @property (nonatomic,copy) NSNumber *__k__
+
+#define __integer(__k__) @property (nonatomic,assign)NSInteger  __k__
+#define __double(__k__) @property (nonatomic,assign)double  __k__
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+
+
+
+
+#import "PPGetAddressBook.h"
+
+
+
+
+
+#endif /* PrefixHeader_pch */

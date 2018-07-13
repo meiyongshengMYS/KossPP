@@ -13,9 +13,16 @@
 		ACD5A41E20F83D4C00DE2D0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD5A41D20F83D4C00DE2D0B /* Assets.xcassets */; };
 		ACD5A42120F83D4C00DE2D0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD5A41F20F83D4C00DE2D0B /* LaunchScreen.storyboard */; };
 		ACD5A42420F83D4C00DE2D0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD5A42320F83D4C00DE2D0B /* main.m */; };
+		ACD5A43320F83F6700DE2D0B /* PPAddressBookHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD5A42D20F83F6700DE2D0B /* PPAddressBookHandle.m */; };
+		ACD5A43420F83F6700DE2D0B /* PPGetAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD5A42F20F83F6700DE2D0B /* PPGetAddressBook.m */; };
+		ACD5A43520F83F6700DE2D0B /* PPPersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD5A43120F83F6700DE2D0B /* PPPersonModel.m */; };
+		DD0061A62CF059A073CBB80E /* libPods-KossPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 701B6740A63B8060A64A50B6 /* libPods-KossPP.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01BB431AD7E61B5CD26453FB /* Pods-KossPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KossPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-KossPP/Pods-KossPP.release.xcconfig"; sourceTree = "<group>"; };
+		701B6740A63B8060A64A50B6 /* libPods-KossPP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KossPP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		751BFE21EFC256460D805761 /* Pods-KossPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KossPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KossPP/Pods-KossPP.debug.xcconfig"; sourceTree = "<group>"; };
 		ACD5A41120F83D4C00DE2D0B /* KossPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KossPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD5A41420F83D4C00DE2D0B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ACD5A41520F83D4C00DE2D0B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +33,14 @@
 		ACD5A42020F83D4C00DE2D0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACD5A42220F83D4C00DE2D0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACD5A42320F83D4C00DE2D0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ACD5A42C20F83F6700DE2D0B /* PPAddressBookHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPAddressBookHandle.h; sourceTree = "<group>"; };
+		ACD5A42D20F83F6700DE2D0B /* PPAddressBookHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPAddressBookHandle.m; sourceTree = "<group>"; };
+		ACD5A42E20F83F6700DE2D0B /* PPGetAddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPGetAddressBook.h; sourceTree = "<group>"; };
+		ACD5A42F20F83F6700DE2D0B /* PPGetAddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPGetAddressBook.m; sourceTree = "<group>"; };
+		ACD5A43020F83F6700DE2D0B /* PPPersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPersonModel.h; sourceTree = "<group>"; };
+		ACD5A43120F83F6700DE2D0B /* PPPersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPersonModel.m; sourceTree = "<group>"; };
+		ACD5A43220F83F6700DE2D0B /* PPSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSingleton.h; sourceTree = "<group>"; };
+		ACD5A43620F83FB600DE2D0B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +48,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD0061A62CF059A073CBB80E /* libPods-KossPP.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A1C5375A48935B881BDA213 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				701B6740A63B8060A64A50B6 /* libPods-KossPP.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		722F5FD27CAB89B629186D86 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				751BFE21EFC256460D805761 /* Pods-KossPP.debug.xcconfig */,
+				01BB431AD7E61B5CD26453FB /* Pods-KossPP.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ACD5A40820F83D4C00DE2D0B = {
 			isa = PBXGroup;
 			children = (
 				ACD5A41320F83D4C00DE2D0B /* KossPP */,
 				ACD5A41220F83D4C00DE2D0B /* Products */,
+				722F5FD27CAB89B629186D86 /* Pods */,
+				2A1C5375A48935B881BDA213 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +93,7 @@
 		ACD5A41320F83D4C00DE2D0B /* KossPP */ = {
 			isa = PBXGroup;
 			children = (
+				ACD5A42A20F83F4F00DE2D0B /* lib */,
 				ACD5A41420F83D4C00DE2D0B /* AppDelegate.h */,
 				ACD5A41520F83D4C00DE2D0B /* AppDelegate.m */,
 				ACD5A41720F83D4C00DE2D0B /* ViewController.h */,
@@ -67,8 +103,31 @@
 				ACD5A41F20F83D4C00DE2D0B /* LaunchScreen.storyboard */,
 				ACD5A42220F83D4C00DE2D0B /* Info.plist */,
 				ACD5A42320F83D4C00DE2D0B /* main.m */,
+				ACD5A43620F83FB600DE2D0B /* PrefixHeader.pch */,
 			);
 			path = KossPP;
+			sourceTree = "<group>";
+		};
+		ACD5A42A20F83F4F00DE2D0B /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				ACD5A42B20F83F6700DE2D0B /* PPGetAddressBook */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		ACD5A42B20F83F6700DE2D0B /* PPGetAddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				ACD5A42C20F83F6700DE2D0B /* PPAddressBookHandle.h */,
+				ACD5A42D20F83F6700DE2D0B /* PPAddressBookHandle.m */,
+				ACD5A42E20F83F6700DE2D0B /* PPGetAddressBook.h */,
+				ACD5A42F20F83F6700DE2D0B /* PPGetAddressBook.m */,
+				ACD5A43020F83F6700DE2D0B /* PPPersonModel.h */,
+				ACD5A43120F83F6700DE2D0B /* PPPersonModel.m */,
+				ACD5A43220F83F6700DE2D0B /* PPSingleton.h */,
+			);
+			path = PPGetAddressBook;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +137,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACD5A42720F83D4C00DE2D0B /* Build configuration list for PBXNativeTarget "KossPP" */;
 			buildPhases = (
+				2144E63BDF19585B4E9CD2C9 /* [CP] Check Pods Manifest.lock */,
 				ACD5A40D20F83D4C00DE2D0B /* Sources */,
 				ACD5A40E20F83D4C00DE2D0B /* Frameworks */,
 				ACD5A40F20F83D4C00DE2D0B /* Resources */,
@@ -137,14 +197,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2144E63BDF19585B4E9CD2C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KossPP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ACD5A40D20F83D4C00DE2D0B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACD5A43520F83F6700DE2D0B /* PPPersonModel.m in Sources */,
 				ACD5A41920F83D4C00DE2D0B /* ViewController.m in Sources */,
+				ACD5A43320F83F6700DE2D0B /* PPAddressBookHandle.m in Sources */,
 				ACD5A42420F83D4C00DE2D0B /* main.m in Sources */,
 				ACD5A41620F83D4C00DE2D0B /* AppDelegate.m in Sources */,
+				ACD5A43420F83F6700DE2D0B /* PPGetAddressBook.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -267,7 +351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -276,28 +360,36 @@
 		};
 		ACD5A42820F83D4C00DE2D0B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 751BFE21EFC256460D805761 /* Pods-KossPP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CA8L9SM8KT;
+				DEVELOPMENT_TEAM = 553G8MZDP3;
+				GCC_PREFIX_HEADER = /Users/mei/Desktop/PP/KossPP/KossPP/PrefixHeader.pch;
 				INFOPLIST_FILE = KossPP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BaLinErQi.KossPP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		ACD5A42920F83D4C00DE2D0B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01BB431AD7E61B5CD26453FB /* Pods-KossPP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CA8L9SM8KT;
+				DEVELOPMENT_TEAM = 553G8MZDP3;
+				GCC_PREFIX_HEADER = /Users/mei/Desktop/PP/KossPP/KossPP/PrefixHeader.pch;
 				INFOPLIST_FILE = KossPP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BaLinErQi.KossPP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
