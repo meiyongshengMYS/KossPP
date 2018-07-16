@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC0C729C20F99FAB008C0A00 /* PraiseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0C729B20F99FAA008C0A00 /* PraiseButton.m */; };
+		AC0C729E20F9A5B6008C0A00 /* mys.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC0C729D20F9A5B6008C0A00 /* mys.xcassets */; };
+		AC0C72A120F9BE95008C0A00 /* CAEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0C72A020F9BE95008C0A00 /* CAEmitter.m */; };
 		ACD5A41620F83D4C00DE2D0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD5A41520F83D4C00DE2D0B /* AppDelegate.m */; };
 		ACD5A41920F83D4C00DE2D0B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD5A41820F83D4C00DE2D0B /* ViewController.m */; };
 		ACD5A41C20F83D4C00DE2D0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD5A41A20F83D4C00DE2D0B /* Main.storyboard */; };
@@ -23,6 +26,11 @@
 		01BB431AD7E61B5CD26453FB /* Pods-KossPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KossPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-KossPP/Pods-KossPP.release.xcconfig"; sourceTree = "<group>"; };
 		701B6740A63B8060A64A50B6 /* libPods-KossPP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KossPP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		751BFE21EFC256460D805761 /* Pods-KossPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KossPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KossPP/Pods-KossPP.debug.xcconfig"; sourceTree = "<group>"; };
+		AC0C729A20F99FAA008C0A00 /* PraiseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PraiseButton.h; sourceTree = "<group>"; };
+		AC0C729B20F99FAA008C0A00 /* PraiseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PraiseButton.m; sourceTree = "<group>"; };
+		AC0C729D20F9A5B6008C0A00 /* mys.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = mys.xcassets; sourceTree = "<group>"; };
+		AC0C729F20F9BE95008C0A00 /* CAEmitter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAEmitter.h; sourceTree = "<group>"; };
+		AC0C72A020F9BE95008C0A00 /* CAEmitter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAEmitter.m; sourceTree = "<group>"; };
 		ACD5A41120F83D4C00DE2D0B /* KossPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KossPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD5A41420F83D4C00DE2D0B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ACD5A41520F83D4C00DE2D0B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,6 +80,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AC0C729920F99FAA008C0A00 /* 点赞动画 */ = {
+			isa = PBXGroup;
+			children = (
+				AC0C729A20F99FAA008C0A00 /* PraiseButton.h */,
+				AC0C729B20F99FAA008C0A00 /* PraiseButton.m */,
+				AC0C729F20F9BE95008C0A00 /* CAEmitter.h */,
+				AC0C72A020F9BE95008C0A00 /* CAEmitter.m */,
+				AC0C729D20F9A5B6008C0A00 /* mys.xcassets */,
+			);
+			path = "点赞动画";
+			sourceTree = "<group>";
+		};
 		ACD5A40820F83D4C00DE2D0B = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +131,7 @@
 		ACD5A42A20F83F4F00DE2D0B /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				AC0C729920F99FAA008C0A00 /* 点赞动画 */,
 				ACD5A42B20F83F6700DE2D0B /* PPGetAddressBook */,
 			);
 			path = lib;
@@ -190,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACD5A42120F83D4C00DE2D0B /* LaunchScreen.storyboard in Resources */,
+				AC0C729E20F9A5B6008C0A00 /* mys.xcassets in Resources */,
 				ACD5A41E20F83D4C00DE2D0B /* Assets.xcassets in Resources */,
 				ACD5A41C20F83D4C00DE2D0B /* Main.storyboard in Resources */,
 			);
@@ -223,9 +245,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC0C729C20F99FAB008C0A00 /* PraiseButton.m in Sources */,
 				ACD5A43520F83F6700DE2D0B /* PPPersonModel.m in Sources */,
 				ACD5A41920F83D4C00DE2D0B /* ViewController.m in Sources */,
 				ACD5A43320F83F6700DE2D0B /* PPAddressBookHandle.m in Sources */,
+				AC0C72A120F9BE95008C0A00 /* CAEmitter.m in Sources */,
 				ACD5A42420F83D4C00DE2D0B /* main.m in Sources */,
 				ACD5A41620F83D4C00DE2D0B /* AppDelegate.m in Sources */,
 				ACD5A43420F83F6700DE2D0B /* PPGetAddressBook.m in Sources */,
@@ -365,7 +389,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 553G8MZDP3;
+				DEVELOPMENT_TEAM = 68SY9AM7EA;
 				GCC_PREFIX_HEADER = /Users/mei/Desktop/PP/KossPP/KossPP/PrefixHeader.pch;
 				INFOPLIST_FILE = KossPP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -383,7 +407,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 553G8MZDP3;
+				DEVELOPMENT_TEAM = 68SY9AM7EA;
 				GCC_PREFIX_HEADER = /Users/mei/Desktop/PP/KossPP/KossPP/PrefixHeader.pch;
 				INFOPLIST_FILE = KossPP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

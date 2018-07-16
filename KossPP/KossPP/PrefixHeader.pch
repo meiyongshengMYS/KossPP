@@ -14,9 +14,10 @@
 #define __array(__k__) @property (nonatomic,strong)NSArray*__k__
 #define __dicmutable(__k__) @property (nonatomic,strong)NSMutableDictionary*__k__
 #define __number(__k__) @property (nonatomic,copy) NSNumber *__k__
-
 #define __integer(__k__) @property (nonatomic,assign)NSInteger  __k__
 #define __double(__k__) @property (nonatomic,assign)double  __k__
+
+#define BARandomColor   [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1.0f];
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
@@ -26,8 +27,7 @@
 
 
 #import "PPGetAddressBook.h"
-
-
+#import <MBProgressHUD.h>
 
 
 

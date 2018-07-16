@@ -7,4 +7,8 @@ target 'KossPP' do
 
   # Pods for KossPP
 
+pod 'MBProgressHUD', '~> 1.1.0'
+
+
+
 end
